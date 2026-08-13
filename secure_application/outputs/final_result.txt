@@ -1,0 +1,53 @@
+E-COMMERCE SAST LAB - FINAL RESULT
+
+Group: 08
+Application: E-Commerce Website
+SAST Tool: SonarQube
+
+Application Functionalities Tested:
+1. Product Browsing
+2. Shopping Cart
+3. Checkout
+4. Order History
+5. Product Review
+6. File Upload
+
+Application Security Test Cases:
+1. SQL Injection
+2. Cross-Site Scripting (XSS)
+3. File Upload Vulnerability
+
+SonarQube Analysis:
+Project: ECommerce_SAST_Group08
+Analysis: Successful
+
+SonarQube Findings:
+1. CSRF protection issue
+   Rule: python:S4502
+   Severity: High
+   Line: 5
+
+2. HTTP methods not specified
+   Rule: python:S6965
+   Severity: Medium
+   Line: 20
+
+3. HTTP methods not specified
+   Rule: python:S6965
+   Severity: Medium
+   Line: 38
+
+4. Debug mode enabled
+   Rule: python:S4507
+   Severity: Low
+   Line: 44
+
+Total SonarQube Issues: 4
+
+Final Quality Gate: FAILED
+Reason: New issues were detected and code coverage was 0%.
+
+Note:
+SQL Injection, XSS and File Upload were included as intentionally insecure
+test cases for the security lab. SonarQube's reported findings are recorded
+separately above and are not being falsely claimed as SonarQube detections.
